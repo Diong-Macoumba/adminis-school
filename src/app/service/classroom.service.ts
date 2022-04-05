@@ -8,7 +8,7 @@ import {Classroom} from "../model/classroom";
   providedIn: 'root'
 })
 export class ClassroomService {
-  private classroomUrl = 'http://localhost:8080/Classroom';
+  private classroomUrl = 'https://administration-school.herokuapp.com/Classroom';
   constructor(private http: HttpClient) { }
 
   getAllClassroom():Observable<Classroom[]>{

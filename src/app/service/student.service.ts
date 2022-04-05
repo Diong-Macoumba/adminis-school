@@ -8,7 +8,7 @@ import {StudentResponseDto} from "../dto/student-response-dto";
   providedIn: 'root'
 })
 export class StudentService {
-  private studentUrl = 'http://localhost:8080/Students';
+  private studentUrl = 'https://administration-school.herokuapp.com/Students';
   constructor( private http: HttpClient) { }
 
   getAllStudents():Observable<Student[]>{

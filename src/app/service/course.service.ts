@@ -8,7 +8,7 @@ import {CourseResponseDto} from "../dto/course-response-dto";
   providedIn: 'root'
 })
 export class CourseService {
-  private courseUrl = 'http://localhost:8080/Courses';
+  private courseUrl = 'https://administration-school.herokuapp.com/Courses';
   constructor(private http : HttpClient) { }
   getAllCourse():Observable<Course[]>{
     return this.http.get<Course[]>(`${this.courseUrl}/All`);
