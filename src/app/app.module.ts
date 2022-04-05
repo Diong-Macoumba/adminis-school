@@ -21,6 +21,8 @@ import { UpdateTeacherComponent } from './Components/teacher/update-teacher/upda
 import { CreateCourseComponent } from './Components/course/create-course/create-course.component';
 import { ListCourseComponent } from './Components/course/list-course/list-course.component';
 import { UpdateCourseComponent } from './Components/course/update-course/update-course.component';
+import { CreateExamComponent } from './Components/exam/create-exam/create-exam.component';
+import { ListExamComponent } from './Components/exam/list-exam/list-exam.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { UpdateCourseComponent } from './Components/course/update-course/update-
     UpdateTeacherComponent,
     CreateCourseComponent,
     ListCourseComponent,
-    UpdateCourseComponent
+    UpdateCourseComponent,
+    CreateExamComponent,
+    ListExamComponent,
   ],
   imports: [
     BrowserModule,
