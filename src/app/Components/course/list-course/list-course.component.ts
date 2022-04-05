@@ -3,7 +3,6 @@ import {CourseService} from "../../../service/course.service";
 import {Course} from "../../../model/course";
 import {Teacher} from "../../../model/teacher";
 import {Router} from "@angular/router";
-import {workspaceRoot} from "@angular-devkit/build-angular/src/test-utils";
 
 @Component({
   selector: 'app-list-course',
@@ -35,7 +34,7 @@ export class ListCourseComponent implements OnInit {
 
   delete(id: number) {
     let v = confirm("etes vous sûr?");
-    if (v == true) {
+    if (v) {
       this.courseService.deleteCourse(id).subscribe(()=>
         this.goBack());
     }
